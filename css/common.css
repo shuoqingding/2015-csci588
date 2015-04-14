@@ -35,3 +35,15 @@ body{
 #global_search{
   float:right !important;
 }
+
+.navbar-dark {
+  border-top: solid 1px #912323;
+  background-color: #600;
+  background-image: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+.navbar-dark a{
+  color: #fff;
+}
