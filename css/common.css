@@ -20,7 +20,7 @@ body{
   display: block;
   width: 334px;
   height: 72px;
-  margin: 0 0 20px;
+  margin: 0 0 10px 0;
   color: #fff;
   text-indent: -9999px;
   display: block;
@@ -28,15 +28,23 @@ body{
   background-size: 332px;
 }
 
+#vt_header{
+  padding: 10px;
+}
+
 #vt_header h1{
   float:left;
+}
+
+#vt_header .container{
+  height: 110px;
 }
 
 #global_search{
   float:right !important;
 }
 
-.navbar-dark {
+.navbar-red {
   border-top: solid 1px #912323;
   background-color: #600;
   background-image: none;
@@ -44,6 +52,19 @@ body{
   box-shadow: none;
 }
 
-.navbar-dark a{
+.navbar-red a{
   color: #fff;
 }
+
+.navbar-red li{
+  text-align: center;
+  font-size: 15px;
+}
+
+.navbar-red a:hover{
+  background-color: #440303 !important;
+}
+
+.navbar-red a:focus{
+  background-color: #440303 !important;
+} 
