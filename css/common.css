@@ -26,7 +26,7 @@ body{
   margin: 8px 0 0 0;
 }
 
-#vt_header h1 a {
+#usc_logo {
   position: relative;
   display: block;
   width: 300px;
@@ -37,6 +37,12 @@ body{
   display: block;
   background: transparent url(../img/usc_viterbian.png) 0 0 no-repeat;
   background-size: 300px;
+}
+
+#profile_pic{
+  padding-right: 10px;
+  border-right: solid 1px rgb(252, 175, 175);
+  
 }
 
 #vt_header{
