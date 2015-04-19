@@ -95,7 +95,7 @@
 
 	      </div>
 	      <div class="modal-footer">
-	        <button id="new_event_submit" type="button" class="btn btn-primary">Add</button>
+	        <button id="new_event_submit" type="button" class="btn btn-primary" data-dismiss="modal" >Add</button>
 	      </div>
 	    </div>
 	  </div>
@@ -152,7 +152,7 @@
 				calData[date] = '<a href="#">'+event_name+'</a>';
 
 				cal.setData( calData );
-				$("#myModal").hide();
+				//$("#myModal").hide();
 				//cal.goto( date_arr[1], date_arr[0], updateMonthYear );
 
 			} );
