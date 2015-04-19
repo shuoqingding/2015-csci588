@@ -1,0 +1,18 @@
+permutation（String s1, String s2）{
+	if(s1.length!=s2.length){
+	return false;
+	}
+	HashSet hs= new HashSet();
+	for(int i=0;i<s1.length;i++)
+	{
+	hs.add(s1.charAt(i));
+	}
+	for(int i=0;i<s2.length;i++)
+	{
+	if(!hs.contain(s2.charAt(i))){
+	return false;
+	}
+	}
+	return true;
+}
+
