@@ -16,10 +16,10 @@ margin-top:0 !important;
 
 }
 
-#event_date_inp{
-	padding-left: 20px;
+.inp-title{
+  display: inline-block;
+  width: 120px;
 }
-
 .custom-calendar-full {
 	position: relative;
 /*	top: 200px;
