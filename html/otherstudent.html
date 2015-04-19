@@ -42,10 +42,11 @@
     <!-- ******HEADER****** --> 
     <header id="vt_header" >
     	<div class="container">
-        <h1><a href="http://www.usc.edu">University of Southern California</a></h1>
+        <h1><a id="usc_logo" href="http://www.usc.edu">University of Southern California</a></h1>
         <h1 id="global_search">
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
+              <a id="profile_pic" href='mydashboard.html'><img src='../img/profile.png' height='35px' width='35px'  class="img-circle"></a>
               <input type="text" class="form-control" placeholder="Search">
             </div>
           </form>
@@ -99,15 +100,9 @@
         <br>
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <div class="full col-sm-9">
-                      
-                        <!-- content -->
-                        
-                        <div class="col-sm-12" id="featured">   
-                          <div class="page-header text-muted">
-                          Common courses
-                          </div> 
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Recommand courses</h4></div>
+                    <div class="panel-body">
                         
                         <!--/top story-->
                         <div class="row">    
@@ -185,24 +180,29 @@
                            <div class="col-sm-12"><hr></div>
                         </div>
 
-                        <div class="col-sm-12">
-                          <div class="page-header text-muted divider">
-                            Leave Message
-                          </div>
-                        </div>
-
                     </div><!-- /col-9 -->
 
+                </div>
+                <br>
+                    
+                <section class="about section">
+                  <div class="section-inner">
+                      <h2 class="heading">He want to say</h2>
+                      <div class="full col-sm-9">
+                          <textarea class="form-control" rows="3"></textarea>
+                          <br>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                      </div><!-- /col-9 -->
+                  </div><!--//section-inner-->                 
+                </section><!--//section--> 
 
-                    <div class="full col-sm-9">
-                      
-                        <textarea class="form-control" rows="3"></textarea>
-                        <br>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div><!-- /col-9 -->
 
-                
+
             </div><!--//primary-->
+
+
+
+
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
                     <section class="about section">
@@ -214,12 +214,12 @@
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
-                </section><!--//section-->                
+                    </section><!--//section-->                
                 </aside><!--//aside-->
                 
                 <aside class="skills aside section">
                     <div class="panel panel-default">
-                  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Recommand courses</h4></div>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Recommand courses</h4></div>
                     <div class="panel-body">
                       <div class="list-group">
                         <a href="#" class="list-group-item">CSCI 570 Algorithm</a>
@@ -230,8 +230,8 @@
                         <a href="#" class="list-group-item">CSCI 561 Artificial Intelligence</a>
                         <a href="#" class="list-group-item">DSO 528 Data Warehouse</a>
                      </div>
-                   </div>
-                </div>
+                    </div>
+                    </div>
                 </aside><!--//section-->
 
               
