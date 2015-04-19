@@ -1,0 +1,21 @@
+#map-canvas {
+  width:75%;
+  //height:100%;
+  position:absolute;
+  right:0px;
+  top:150px;
+  bottom:40px;
+  overflow:hidden;
+}
+
+#main, #main>.row {
+    height:100%;
+}
+
+#main>.row {
+    overflow-y:scroll;
+}
+
+#left {
+    height:100%;
+}
