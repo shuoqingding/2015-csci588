@@ -10,9 +10,14 @@
 
 }
 
+.navbar-toggle .icon-bar{
+  background: white;
+
+}
+
 body{
   background: #FAFAE2 !important;
-  min-width: 980px;
+  //min-width: 980px;
 }
 
 #vt_header h1 a {
