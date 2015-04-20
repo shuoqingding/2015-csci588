@@ -58,27 +58,59 @@
       </div>
     </nav>
 
-    <div id="content_warpper"、>
+    <div id="content_warpper">
       <!-- Example row of columns -->
-     <div id="map-canvas"></div>
-<div class="container-fluid" id="main">
-  <div class="row main-row">
-    <div class="col-sm-4 col-md-3" id="left">
-    
-      <h2>Bootstrap Google Maps Demo</h2>
-      
-      <!-- item list -->
-      <div class="panel panel-default">
-        <div class="panel-heading"><a href="">Item heading</a></div>
-      </div>
-      
-      
-      <hr>
-        
-    </div>
-    <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
-    </div> <!-- /container -->
+     <div class="container-fluid" id="main">
+       <div class="row main-row">
+         <div class="col-sm-4 col-md-3" id="left">
+               
+           <!-- item list -->
+           <div class="panel panel-default">
+             <div class="panel-body">
+                <div id="search_form">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search Building">
+                    </div>
+                  </form>
+                </div>
+                <hr/>
+                <ul id="icon_ul">
+                  <li>
+                      <span id="food_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Food</span>
+                  </li>
+                   <li>
+                      <span id="transp_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Transport</span>
+                  </li>
+                   <li>
+                      <span id="med_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Hospital</span>
+                  </li>
+                   <li>
+                      <span id="gym_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Gym</span>
+                  </li>
+                   <li>
+                      <span id="lib_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Libray</span>
+                  </li>
+                   <li>
+                      <span id="park_icon" class="map-icon"></span>
+                      <span class="map-icon-text">Parking</span>
+                  </li>
+                </ul>
+             </div>
+           </div>
+                     
+         </div>
+         <div id="map-canvas"></div>
 
+         <div class="col-xs-4"><!--map-canvas will be postioned here--></div>
+       </div> <!-- /container -->
+     </div>
+    </div>
     <footer id="vt_footer">
       <div class="container">
         <small>&copy; Company 2014</small>

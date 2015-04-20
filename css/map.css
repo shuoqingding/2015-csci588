@@ -18,4 +18,72 @@
 
 #left {
     height:100%;
+    padding: 0;
+}
+
+nav{
+  margin-bottom: 0 !important;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#icon_ul{
+  list-style-type: none; 
+}
+
+#icon_ul li{
+  width: 80px;
+  display: inline-block;
+  margin: 0 25px 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#food_icon{
+  background-image: url(../img/food.png);
+}
+
+#park_icon{
+    background-image: url(../img/park.ico);
+}
+
+#lib_icon{
+    background-image: url(../img/libray.png);
+}
+
+#gym_icon{
+    background-image: url(../img/gym.png);
+}
+
+#med_icon{
+    background-image: url(../img/hospital.png);
+}
+
+#transp_icon{
+    background-image: url(../img/transport.png);
+}
+
+.map-icon{
+  height: 60px;
+  width: 60px;
+  background-size: 60px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.map-icon-text{
+  padding-top: 5px;
+  font-size: 16px;
+  display: block;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80px;
+  text-overflow: ellipsis;
 }
