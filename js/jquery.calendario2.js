@@ -167,7 +167,7 @@
 						}
 
 						if( content !== '' ) {
-							inner += '<div>' + content + '</div>';
+							inner += '<div class="availableDate">' + content + '</div>';
 						}
 
 						++day;
