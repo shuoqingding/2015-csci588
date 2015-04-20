@@ -16,6 +16,15 @@
     overflow-y:scroll;
 }
 
+.panel-body{
+  height: 800px;
+}
+
+body{
+  overflow: hidden;
+
+}
+
 #left {
     height:100%;
     padding: 0;
