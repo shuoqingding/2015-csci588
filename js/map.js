@@ -4,6 +4,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 var map;
 
 function search( loc ){
+  loc = loc.toUpperCase();
   if( loc == "SGM" ){
     console.log( loc );
     setMarkers( [ [34.021449, -118.289094, loc] ] );
@@ -115,8 +116,7 @@ $("#gym_icon").click( function(){
 } );
 
 $("#button_search").click( function(){
-  search( $("#loc_search").val() );
-
+  window.location = "map.html?loc=" + $("#loc_search").val();
 });
 
 
