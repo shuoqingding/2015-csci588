@@ -25,8 +25,8 @@ margin-top:0 !important;
 /*	top: 200px;
 	bottom: 0px;
 	left: 0px; */
-	width: 70%;
-	height: 70%;
+	width: 60%;
+	height: 60%;
 }
 
 .fc-calendar-container {
@@ -45,7 +45,7 @@ margin-top:0 !important;
 }
 
 .custom-header h2,
-.custom-header h3 {
+.custom-header h3{
 	float: left;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -75,7 +75,7 @@ margin-top:0 !important;
 	color: rgba(255,255,255,0.9);
 }
 
-.custom-header h3 {
+.custom-header h3,{
 	width: 40%;
 	//color: #ddd;
 	color: #932A11;
@@ -132,11 +132,11 @@ margin-top:0 !important;
 }
 
 .custom-header nav span.custom-prev:before {
-	content: '\25c2';
+	content: '\276e';
 }
 
 .custom-header nav span.custom-next:before {
-	content: '\25b8';
+	content: '\276f';
 }
 
 .custom-header nav span:last-child {
