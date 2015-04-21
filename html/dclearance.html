@@ -55,12 +55,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav">
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="first.html">Home</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Campus Map</a></li>
-            <li><a href="#">Personal Calendar</a></li>
-            <li><a href="#">Advisement Appointment</a></li>
+            <li><a href="dclearance.html">Courses</a></li>
+            <li><a href="map.html">Campus Map</a></li>
+            <li><a href="calendar.html">Personal Calendar</a></li>
+            <li><a href="calendar_new.html">Advisement Appointment</a></li>
           </ul>
         </div>
       </div>
@@ -93,9 +93,16 @@
             </tbody>
           </table>
 
-          <hr/>
           
-          <p>
+          
+          
+
+          
+          
+          
+          <h4>Course Lookup</h4>
+
+          <p style="padding-top:5px">
             <div class="btn-group">
               <button type="button" class="btn btn-default">Fall 2015d</button>
               <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -174,8 +181,67 @@
 
             <a class="btn btn-warning" role="button" href="course.html" style="float:right;padding-right:20px;padding-left:20px">Lookup</a>
           </p>
-          
+
           <hr/>
+          <br/>
+          
+          <h4>My Requests</h4>
+
+          <table id="table" class="table table-striped table-bordered">
+            <thead>
+              <tr class="danger">
+                <th>Term</th>
+                <th>Class</th>
+                <th>Section</th>               
+                <th>Status</th>
+                <th>Queue #</th>
+                <th>Request Deletion</th>                
+              </tr>
+            </thead>
+
+            <tbody valign="middle">
+              <tr>
+                <td>Summer 2015</td>
+                <td>CSCI 402</td>
+                <td>30203D</td>
+                <td>Approved</td>
+                <td>-</td>            
+                <td align="center"><button class="btn btn-warning" type="submit">Delete</button></td>               
+              </tr>
+              <tr class="active">
+                <td>Fall 2015</td>
+                <td>EE 450</td>
+                <td>30568D</td>
+                <td>Pending</td>
+                <td>16</td>            
+                <td align="center"><button class="btn btn-warning" type="submit">Delete</button></td>               
+              </tr>
+              <tr>
+                <td>Fall 2015</td>
+                <td>CSCI 578</td>
+                <td>30270D</td>
+                <td>Pending</td>
+                <td>78</td>            
+                <td align="center"><button class="btn btn-warning" type="submit">Delete</button></td>               
+              </tr>
+              <tr class="active">
+                <td>Fall 2015</td>
+                <td>CSCI 526</td>
+                <td>30189D</td>
+                <td>Deleted</td>
+                <td>-</td>            
+                <td align="center" style="padding-top:10px;padding-bottom:10px">Request Deleted</td>               
+              </tr>
+
+            </tbody>
+
+
+
+          </table>
+
+
+          <hr/>
+          <br/>
         </div>
 
         <div class="col-md-1">

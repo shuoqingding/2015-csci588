@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     <style>
+      .scrollIMG{
+        width: 560px !important;
+        height: 400px !important;
+        float: left !important;
+
+      }
+
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Viterbian-Schedule Appointment</title>
     
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
-
+    <link href="../css/appointment.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/calendar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/custom_2.css" />
+    <style>
+     .list-group-item.active,{
+        color: #990000;
+        background-color: #990000;
+        border-color: #990000;
+    } 
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,12 +39,13 @@
 
   <body>
 
-    <header id="vt_header">
+     <header id="vt_header">
       <div class="container">
-        <h1><a href="http://www.usc.edu">University of Southern California</a></h1>
+        <h1><a id="usc_logo" href="first.html">University of Southern California</a></h1>
         <h1 id="global_search">
           <form class="navbar-form navbar-left hidden-xs" role="search">
             <div class="form-group">
+              <a id="profile_pic" href='mydashboard.html'><img src='../img/profile.png' height='35px' width='35px'  class="img-circle"></a>
               <input type="text" class="form-control" placeholder="Search">
             </div>
           </form>
@@ -46,12 +65,12 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav">
-            <li><a class="active" href="#">Home</a></li>
+            <li><a href="first.html">Home</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="dclearance.html">Courses</a></li>
             <li><a href="#">Campus Map</a></li>
-            <li><a href="#">Personal Calendar</a></li>
-            <li><a href="#">Advisement Appointment</a></li>
+            <li><a class="active" href="calendar.html">Personal Calendar</a></li>
+            <li><a href="calendar_new.html">Advisement Appointment</a></li>
           </ul>
         </div>
       </div>
@@ -59,37 +78,143 @@
 
     <div id="content_warpper" class="container">
       <!-- Example row of columns -->
-      
-        <h4>Selecting School and Department</h4>
+        
+        <h4 style="margin-bottom:20px">Selecting School and Department</h4>
         <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Engineering
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="school" >
+            Please Select...
             <span class="caret"></span>
         </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Letters, Art and Sciences</a></li>
-                <li><a href="#">Accounting</a></li>
-                <li><a href="#">Architecture</a></li>
-                <li><a href="#">Art and Design</a></li>
-                <li><a href="#">Arts/Tech/Busniess</a></li>
-                <li><a href="#">Cinematic Arts</a></li>
-                <li><a href="#">Communication, Journalism</a></li>
-                <li><a href="#">Dance</a></li>
-                <li><a href="#">Dentistry</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Gerontology</a></li>
-                <li><a href="#">Law</a></li>
-                <li><a href="#">Medicine</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Pharmacy</a></li>
-                <li><a href="#">Physical Therapy</a></li>
-                <li><a href="#">Public Policy</a></li>
-                <li><a href="#">Social Work</a></li>
+            <ul class="dropdown-menu"  role="menu">
+                <li><a href="#" class="schOption">Engineering</a></li>
+                <li><a href="#" class="schOption">Letters, Art and Sciences</a></li>
+                <li><a href="#" class="schOption">Accounting</a></li>
+                <li><a href="#" class="schOption">Architecture</a></li>
+                <li><a href="#" class="schOption">Art and Design</a></li>
+                <li><a href="#" class="schOption">Arts/Tech/Busniess</a></li>
+                <li><a href="#" class="schOption">Cinematic Arts</a></li>
+                <li><a href="#" class="schOption">Communication, Journalism</a></li>
+                <li><a href="#" class="schOption">Dance</a></li>
+                <li><a href="#" class="schOption">Dentistry</a></li>
+                <li><a href="#" class="schOption">Education</a></li>
+                <li><a href="#" class="schOption">Gerontology</a></li>
+                <li><a href="#" class="schOption">Law</a></li>
+                <li><a href="#" class="schOption">Medicine</a></li>
+                <li><a href="#" class="schOption">Music</a></li>
+                <li><a href="#" class="schOption">Pharmacy</a></li>
+                <li><a href="#" class="schOption">Physical Therapy</a></li>
+                <li><a href="#" class="schOption">Public Policy</a></li>
+                <li><a href="#" class="schOption">Social Work</a></li>
             </ul>
         </div>
         
+        
+        <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dept">
+            Please Select...
+            <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="deptOption">Department of Aerospace and Mechanical Engineering</a></li>
+                <li><a href="#" class="deptOption">Department of Astronautical Engineering</a></li>
+                <li><a href="#" class="deptOption">Department of Biomedical Engineering</a></li>
+                <li><a href="#" class="deptOption">Department of Chemical Engineering and Materials Science</a></li>
+                <li><a href="#" class="deptOption">Department of Civil and Environmental Engineering</a></li>
+                <li><a href="#" class="deptOption">Department of Computer Science</a></li>
+                <li><a href="#" class="deptOption">Department of Electrical Engineering</a></li>
+                <li><a href="#" class="deptOption">Department of Industrial and Systems Engineering</a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <h4 id="advisor" style="visibility:hidden; margin-top:25px">Selecting Advisor</h4>
+        <div id="productslistCont" class="marT20" aria-label="Eight topic categories" style="margin-top:5px">
+					<div class="productsList marB">
+<!--						<div id="snap"></div>-->
+						<ul class="subList JQslideLists" id="list1" aria-label="List one: topic categories one through four" role="group" align="center">
+                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                                <div class="clr ht72">
+                                    <img src="../img/pp1.jpg" width="108px" height="108px" class="img-circle"  alt="">
+                                </div>
+                                <div class="dynTxt malign" style="padding-top: 16px; padding-bottom: 11px;">
+                                    Ryan Rozan
+                                </div>
+                            </li>
+                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                                <div class="clr ht72">
+                                    <img src="../img/pp2.jpg" width="108px" height="108px" class="img-circle" alt="">
+                                </div>
+                                <div class="dynTxt malign" style="padding-top: 16px; padding-bottom: 11px;">
+                                    Ken Eng
+                                </div>
+                            </li>
+                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                                <div class="clr ht72">
+                                    <img src="../img/pp3.jpg" width="108px" height="108px" class="img-circle"  alt="">
+                                </div>
+                                <div class="dynTxt malign" style="padding-top: 16px; padding-bottom: 11px;">
+                                    Flor Martinez
+                                </div>
+                            </li >
+                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                                <div class="clr ht72">
+                                    <img src="../img/pp4.jpg" width="108px" height="108px" class="img-circle" alt="">
+                                </div>
+                                <div class="dynTxt malign" style="padding-top: 16px; padding-bottom: 11px;">
+                                    Art Perez
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+					
+    </div> 
+    
+        
+        
+        <h4 id="dateTime" style="visibility:hidden"> Selecting Date and Time</h4>    
+    <div class="custom-calendar-wrap custom-calendar-full" style="float:left;position: relative; visibility:hidden">
+	  	<div class="custom-header clearfix">
+	  		
+	  		<h3 class="custom-month-year">
+	  			<span id="custom-month" class="custom-month"></span>
+	  			<span id="custom-year" class="custom-year"></span>
+	  			<nav>
+	  				<span id="custom-prev" class="custom-prev"></span>
+	  				<span id="custom-next" class="custom-next"></span>
+	  				
+	  			</nav>
+	  		</h3>
+	  	</div>
+	  	<div id="calendar" class="fc-calendar-container"></div>
+        
+        </div>  
+        
+        <div class="list-group" style="float:right;width:25%;position: relative;visibility:hidden;">
+            <a href="#" class="list-group-item active" >Morning</a>
+            <a href="#" class="list-group-item">09:30</a>
+            <a href="#" class="list-group-item">10:30</a>
+            
+<!--
+            <a href="#" class="list-group-item active">Afternoon</a>
+            <a href="#" class="list-group-item">03:30</a>
+            <a href="#" class="list-group-item">04:00</a>
+-->
+        </div>
+        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:visible;right:10%">
+            <a style="background-color: #990000; border-color: #990000;"class="list-group-item active">Morning</a>
+            <a href="#imeSlot"  class="list-group-item">10:30</a>
+            <a href="#imeSlot" class="list-group-item">11:30</a>
+            <a style="background-color: #990000; border-color: #990000;" href="#" class="list-group-item active">Afternoon</a>
+            <a href="#imeSlot" class="list-group-item">03:00</a>
+            <a href="#imeSlot" class="list-group-item">03:30</a>
+            <a href="#imeSlot" class="list-group-item">04:00</a>
+        <a style="background-color:#990000;float:right;margin-top:150px; vertical-align:baseline;visibility:hidden"  class="btn btn-info" id="submit" role="button" >Submit</a>
+        </div>
+        
+        
     </div> <!-- /container -->
-
+      
     <footer id="vt_footer">
       <div class="container">
         <small>&copy; Company 2014</small>
@@ -99,5 +224,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jquery.calendario2.js"></script>
+	<script type="text/javascript" src="../js/data.js"></script>
+	<script type="text/javascript">	
+		$(function() {
+		
+			var cal = $( '#calendar' ).calendario( {
+					onDayClick : function( $el, $contentEl, dateProperties ) {
+
+						for( var key in dateProperties ) {
+							console.log( key + ' = ' + dateProperties[ key ] );
+						}
+
+					},
+					caldata : codropsEvents
+				} ),
+				$month = $( '#custom-month' ).html( cal.getMonthName() ),
+				$year = $( '#custom-year' ).html( cal.getYear() );
+
+			$( '#custom-next' ).on( 'click', function() {
+				cal.gotoNextMonth( updateMonthYear );
+			} );
+
+			$( '#custom-prev' ).on( 'click', function() {
+				cal.gotoPreviousMonth( updateMonthYear );
+			} );
+
+			function updateMonthYear() {				
+				$month.html( cal.getMonthName() );
+				$year.html( cal.getYear() );
+			}
+
+			// you can also add more data later on. As an example:
+			
+      </script>
+     <script>
+            $(document).ready(function(){
+                $(".deptOption").click(function(){
+                    $("li").css({"visibility":"visible"});
+                    $("#advisor").css({"visibility":"visible"});
+                    var htmlString = $( this ).html();
+                    $("#dept").text(htmlString);
+                });
+           });
+          $(document).ready(function(){
+                $(".schOption").click(function(){ 
+                    var htmlString = $( this ).html();
+                    $("#school").text(htmlString);
+                });
+           });
+         
+         $(document).ready(function(){
+                $(".availableDate").click(function(){ 
+                     $("#timeSlot").css({"visibility":"visible"});
+                });
+              });
+         $(document).ready(function(){
+                $(".advisorPic").click(function(){ 
+                     $("#dateTime").css({"visibility":"visible"});
+                     $(".custom-calendar-wrap.custom-calendar-full").css({"visibility":"visible"});
+                });
+           });
+          $(document).ready(function(){
+                $(".list-group-item").click(function(){ 
+                     $("#submit").css({"visibility":"visible"});
+                });
+              });
+         
+         $(document).ready(function(){
+                $("#submit").click(function(){ 
+                     $.simplyToast('A new appontment has been made successfully!', 'success');
+                });
+              });
+    </script>
   </body>
 </html>
