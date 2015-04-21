@@ -1,49 +1,55 @@
+<!DOCTYPE HTML>
 <html>
-<body>
-    <script>
-        Boys = Backbone.Model.extend({
-            defaults : {
-            Name : '',
-            Age : ''
-            }
-        });
 
-        GardeA = Backbone.Collection.extend({
-            model : Boys,
-            url : http://localhost:8080/getGradeAData,
-        });
+<head>
+    <script type="text/javascript">
+    window.onload = function () {
+        // initial values of dataPoints
+        var dps = [
+        {label: "Algorithm", y: 3.7}  ,
+        {label: "Game", y: 4.0},
+        {label: "Database", y: 3.7},
+        {label: "Web Technology", y: 3.3},
+        {label: "Operation System", y: 3.3}
+        ];
+        var totalEmployees = "My GPA: 3.62";
 
-        GradeAView = Backbone.View.extend({
-            el: '#list-of-grade-a-students',
-            initialize: function(){
-                this.gradeA = new GardeA();
-                this.gradeA.fetch();
-                this.listenTo(this.gradeA, "sync", this.render);
+        var chart = new CanvasJS.Chart("chartContainer",{
+            theme: "theme2",
+            title:{ 
+                text: "GPA in USC"
             },
-            render: function(){ 
-                //lets generate html
-                html = ""
-                for (var i = 0; i < this.gradeA.length; i++) {
-                     student = this.gradeA.at(i)
-                     html += "<li> student name: " + student.get("name") + " </li> "
-                }
-                //lets add that html to view's element
-                this.$el.html(html);
-            }
-        });
-        gradeAView = new GradeAView();
-</script>
+            axisY: {                
+                title: "GPA"
+            },                  
+            legend:{
+                verticalAlign: "top",
+                horizontalAlign: "centre",
+                fontSize: 18
 
-<div class="container"> 
-    <div class="hero-unit">Loading</div>
-        <div class="row">
-            <div class="span12">
-                <h3>Projects: </h3>
-                <ul class="nav nav-tabs nav-stacked" id="list-of-grade-a-students">
-                    <!-- need to show list of students here-->
-                </ul>
-            </div>
-        </div>
+            },
+            data : [{
+                type: "column",
+                showInLegend: true,
+                legendMarkerType: "none",               
+                legendText: totalEmployees,
+                indexLabel: "{y}",
+                dataPoints: dps
+            }]
+        });
+
+        // renders initial chart
+        chart.render();
+
+
+        }   
+        </script>
+
+        <script type="text/javascript" src="../js/jquery.canvasjs.min.js"></script>
+    </head>
+<body>
+    <div id="chartContainer" style="height:300px; width:100%;">
     </div>
 </body>
+
 </html>
