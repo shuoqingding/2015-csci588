@@ -79,7 +79,7 @@
     <div id="content_warpper" class="container">
       <!-- Example row of columns -->
         
-        <h4>Selecting School and Department</h4>
+        <h4 style="margin-bottom:20px">Selecting School and Department</h4>
         <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="school" >
             Please Select...
@@ -128,12 +128,12 @@
         </div>
         
         
-        <h4 id="advisor" style="visibility:hidden">Selecting Advisor</h4>
-        <div id="productslistCont" class="marT20" aria-label="Eight topic categories">
+        <h4 id="advisor" style="visibility:hidden; margin-top:25px">Selecting Advisor</h4>
+        <div id="productslistCont" class="marT20" aria-label="Eight topic categories" style="margin-top:5px">
 					<div class="productsList marB">
 <!--						<div id="snap"></div>-->
-						<ul class="subList JQslideLists" id="list1" aria-label="List one: topic categories one through four" role="group">
-                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 175px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+						<ul class="subList JQslideLists" id="list1" aria-label="List one: topic categories one through four" role="group" align="center">
+                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp1.jpg" width="108px" height="108px" class="img-circle"  alt="">
                                 </div>
@@ -141,7 +141,7 @@
                                     Ryan Rozan
                                 </div>
                             </li>
-                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 175px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp2.jpg" width="108px" height="108px" class="img-circle" alt="">
                                 </div>
@@ -149,7 +149,7 @@
                                     Ken Eng
                                 </div>
                             </li>
-                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 175px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp3.jpg" width="108px" height="108px" class="img-circle"  alt="">
                                 </div>
@@ -157,7 +157,7 @@
                                     Flor Martinez
                                 </div>
                             </li >
-                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 175px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp4.jpg" width="108px" height="108px" class="img-circle" alt="">
                                 </div>
@@ -182,7 +182,7 @@
 	  			<nav>
 	  				<span id="custom-prev" class="custom-prev"></span>
 	  				<span id="custom-next" class="custom-next"></span>
-	  				<span id="custom-current" class="custom-current" title="Got to current date" data-toggle="modal" data-target="#myModal"></span>
+	  				
 	  			</nav>
 	  		</h3>
 	  	</div>
@@ -201,39 +201,19 @@
             <a href="#" class="list-group-item">04:00</a>
 -->
         </div>
-        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:hidden;">
+        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:visible;right:10%">
             <a style="background-color: #990000; border-color: #990000;"class="list-group-item active">Morning</a>
-            <a href="#timeSlot"  class="list-group-item">10:30</a>
-            <a href="#" class="list-group-item">11:30</a>
+            <a href="#imeSlot"  class="list-group-item">10:30</a>
+            <a href="#imeSlot" class="list-group-item">11:30</a>
             <a style="background-color: #990000; border-color: #990000;" href="#" class="list-group-item active">Afternoon</a>
-            <a href="#" class="list-group-item">03:00</a>
-            <a href="#" class="list-group-item">03:30</a>
-            <a href="#" class="list-group-item">04:00</a>
+            <a href="#imeSlot" class="list-group-item">03:00</a>
+            <a href="#imeSlot" class="list-group-item">03:30</a>
+            <a href="#imeSlot" class="list-group-item">04:00</a>
+        <a style="background-color:#990000;float:right;margin-top:150px; vertical-align:baseline;visibility:hidden"  class="btn btn-info" id="submit" role="button" >Submit</a>
         </div>
+        
+        
     </div> <!-- /container -->
-
-        
-        
-    <!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel" >New Evenet</h4>
-	      </div>
-	      <div class="modal-body">
-	      	<p id="event_inp"><span class="inp-title">Name:</span> <input type="text"/> </p>
-	      	<p id="event_date_inp"><span class="inp-title">Date:</span> <input type="date"/> </p>
-	        <p id="event_desp_inp"><span class="inp-title">Description:</span> <textarea /> </textarea>
-
-	      </div>
-	      <div class="modal-footer">
-	        <button id="new_event_submit" type="button" class="btn btn-primary" data-dismiss="modal" >Add</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
       
     <footer id="vt_footer">
       <div class="container">
@@ -277,29 +257,7 @@
 			}
 
 			// you can also add more data later on. As an example:
-			$( '#new_event_submit' ).on( 'click', function() {
-				
-				var date = $("#event_date_inp input").val();
-				var date_arr = date.split('-');
-				date = date_arr[1] + '-' + date_arr[2] + '-' + date_arr[0];
-				var event_name = $("#event_inp input").val();
-
-				if( event_name == "" ){
-					$.simplyToast('Empty event name!', 'danger');
-					return;	
-				}
-
-				var calData = {};
-				calData[date] = '<a href="#">'+event_name+'</a>';
-
-				cal.setData( calData );
-				$.simplyToast('A new event has been added successfully!', 'success');
-				//cal.goto( date_arr[1], date_arr[0], updateMonthYear );
-
-			} );
 			
-		
-		});
       </script>
      <script>
             $(document).ready(function(){
@@ -328,6 +286,17 @@
                      $(".custom-calendar-wrap.custom-calendar-full").css({"visibility":"visible"});
                 });
            });
+          $(document).ready(function(){
+                $(".list-group-item").click(function(){ 
+                     $("#submit").css({"visibility":"visible"});
+                });
+              });
+         
+         $(document).ready(function(){
+                $("#submit").click(function(){ 
+                     $.simplyToast('A new appontment has been made successfully!', 'success');
+                });
+              });
     </script>
   </body>
 </html>
