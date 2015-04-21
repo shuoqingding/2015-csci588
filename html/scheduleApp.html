@@ -201,7 +201,7 @@
             <a href="#" class="list-group-item">04:00</a>
 -->
         </div>
-        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:visible;right:10%">
+        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:hidden;right:10%">
             <a style="background-color: #990000; border-color: #990000;"class="list-group-item active">Morning</a>
             <a href="#imeSlot"  class="list-group-item">10:30</a>
             <a href="#imeSlot" class="list-group-item">11:30</a>
@@ -224,7 +224,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-    
+    <script src="../js/simply-toast.min.js"></script>
     <script type="text/javascript" src="../js/jquery.calendario2.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript">	
@@ -257,7 +257,29 @@
 			}
 
 			// you can also add more data later on. As an example:
+			$( '#new_event_submit' ).on( 'click', function() {
+				
+				var date = $("#event_date_inp input").val();
+				var date_arr = date.split('-');
+				date = date_arr[1] + '-' + date_arr[2] + '-' + date_arr[0];
+				var event_name = $("#event_inp input").val();
+
+				if( event_name == "" ){
+					$.simplyToast('Empty event name!', 'danger');
+					return;	
+				}
+
+				var calData = {};
+				calData[date] = '<a href="#">'+event_name+'</a>';
+
+				cal.setData( calData );
+				$.simplyToast('A new event has been added successfully!', 'success');
+				//cal.goto( date_arr[1], date_arr[0], updateMonthYear );
+
+			} );
 			
+		
+		});
       </script>
      <script>
             $(document).ready(function(){
@@ -267,36 +289,43 @@
                     var htmlString = $( this ).html();
                     $("#dept").text(htmlString);
                 });
-           });
-          $(document).ready(function(){
                 $(".schOption").click(function(){ 
                     var htmlString = $( this ).html();
                     $("#school").text(htmlString);
                 });
-           });
-         
-         $(document).ready(function(){
-                $(".availableDate").click(function(){ 
+                $(".available-date").click(function(){ 
+                     $( this ).css({"background":"#FFCC55"});
                      $("#timeSlot").css({"visibility":"visible"});
+                     $(this).off();
                 });
-              });
-         $(document).ready(function(){
                 $(".advisorPic").click(function(){ 
                      $("#dateTime").css({"visibility":"visible"});
                      $(".custom-calendar-wrap.custom-calendar-full").css({"visibility":"visible"});
                 });
-           });
-          $(document).ready(function(){
                 $(".list-group-item").click(function(){ 
                      $("#submit").css({"visibility":"visible"});
                 });
-              });
-         
-         $(document).ready(function(){
                 $("#submit").click(function(){ 
-                     $.simplyToast('A new appontment has been made successfully!', 'success');
+                    $.simplyToast('A new appontment has been made successfully!', 'success');
+                setTimeout(function () {
+                    window.location.href = "calendar_new.html"; //will redirect to your blog page (an ex: blog.html)
+                    }, 2000); //will call the function after 2 secs.
+
                 });
-              });
+                $(".available-date")
+                .mouseover(function() {
+                     $(this).css({"background":"#FFCC00"});
+                });
+                $(".available-date")
+                .mouseout(function() {
+                    $( this ).css({"background":"#990000"});
+                });
+                
+                    
+                });
+         
+                
+              
     </script>
   </body>
 </html>

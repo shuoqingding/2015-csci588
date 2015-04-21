@@ -167,7 +167,7 @@
 						}
 
 						if( content !== '' ) {
-							inner += '<div class="availableDate">' + content + '</div>';
+							inner += '<div class="available-date">' + content + '</div>';
 						}
 
 						++day;
@@ -182,7 +182,17 @@
 						cellClasses += 'fc-content';
 					}
 
-					html += cellClasses !== '' ? '<div class="' + cellClasses + '">' : '<div>';
+                    
+                    if(cellClasses !== ''){
+                        html +='<div class=' + cellClasses + '">';
+                    }else{
+                        if(day>this.today.getDate()){
+                            html +='<div  class="available-date">';
+                        }else{
+                            html +='<div>';
+                        }
+                    }
+//					html += cellClasses !== '' ? '<div class="available-date ' + cellClasses + '">' : '<div class="available-date">';
 					html += inner;
 					html += '</div>';
 
