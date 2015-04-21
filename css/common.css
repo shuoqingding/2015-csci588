@@ -20,6 +20,7 @@ html, body{
 
 body{
   background: #FAFAE2 !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 #vt_header h1{
