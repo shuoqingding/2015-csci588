@@ -6,9 +6,11 @@
         width: 560px !important;
         height: 400px !important;
         float: left !important;
-
+      
       }
-
+    .selected-date{
+      background : #FFCC55;
+    }
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,11 +84,11 @@
         <h4 style="margin-bottom:20px">Selecting School and Department</h4>
         <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="school" >
-            Please Select...
+            Engineering
             <span class="caret"></span>
         </button>
             <ul class="dropdown-menu"  role="menu">
-                <li><a href="#" class="schOption">Engineering</a></li>
+                
                 <li><a href="#" class="schOption">Letters, Art and Sciences</a></li>
                 <li><a href="#" class="schOption">Accounting</a></li>
                 <li><a href="#" class="schOption">Architecture</a></li>
@@ -111,7 +113,7 @@
         
         <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dept">
-            Please Select...
+           Department of Computer Science
             <span class="caret"></span>
         </button>
             <ul class="dropdown-menu" role="menu">
@@ -120,7 +122,7 @@
                 <li><a href="#" class="deptOption">Department of Biomedical Engineering</a></li>
                 <li><a href="#" class="deptOption">Department of Chemical Engineering and Materials Science</a></li>
                 <li><a href="#" class="deptOption">Department of Civil and Environmental Engineering</a></li>
-                <li><a href="#" class="deptOption">Department of Computer Science</a></li>
+                
                 <li><a href="#" class="deptOption">Department of Electrical Engineering</a></li>
                 <li><a href="#" class="deptOption">Department of Industrial and Systems Engineering</a></li>
                 
@@ -128,12 +130,12 @@
         </div>
         
         
-        <h4 id="advisor" style="visibility:hidden; margin-top:25px">Selecting Advisor</h4>
+        <h4 id="advisor" style="visibility:visible; margin-top:25px">Selecting Advisor</h4>
         <div id="productslistCont" class="marT20" aria-label="Eight topic categories" style="margin-top:5px">
 					<div class="productsList marB">
 <!--						<div id="snap"></div>-->
 						<ul class="subList JQslideLists" id="list1" aria-label="List one: topic categories one through four" role="group" align="center">
-                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button"  class="advisorPic" style="visibility: visible; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp1.jpg" width="108px" height="108px" class="img-circle"  alt="">
                                 </div>
@@ -141,7 +143,7 @@
                                     Ryan Rozan
                                 </div>
                             </li>
-                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button" class="advisorPic"  style="visibility: visible; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp2.jpg" width="108px" height="108px" class="img-circle" alt="">
                                 </div>
@@ -149,7 +151,7 @@
                                     Ken Eng
                                 </div>
                             </li>
-                            <li role="button"  class="advisorPic" style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button"  class="advisorPic" style="visibility: visible; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp3.jpg" width="108px" height="108px" class="img-circle"  alt="">
                                 </div>
@@ -157,7 +159,7 @@
                                     Flor Martinez
                                 </div>
                             </li >
-                            <li role="button" class="advisorPic"  style="visibility: hidden; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
+                            <li role="button" class="advisorPic"  style="visibility: visible; height: 180px;" tabindex="0" aria-label="Internet &amp; Connectivity" symreq="Y" symcatid="SC0019" diagflg="N" id="SC0019" symcatdesc="Internet &amp; Connectivity" symcount="9">
                                 <div class="clr ht72">
                                     <img src="../img/pp4.jpg" width="108px" height="108px" class="img-circle" alt="">
                                 </div>
@@ -172,8 +174,8 @@
     
         
         
-        <h4 id="dateTime" style="visibility:hidden"> Selecting Date and Time</h4>    
-    <div class="custom-calendar-wrap custom-calendar-full" style="float:left;position: relative; visibility:hidden">
+        <h4 id="dateTime" style="visibility:visible"> Selecting Date and Time</h4>    
+    <div class="custom-calendar-wrap custom-calendar-full" style="float:left;position: relative; visibility:visible">
 	  	<div class="custom-header clearfix">
 	  		
 	  		<h3 class="custom-month-year">
@@ -201,16 +203,15 @@
             <a href="#" class="list-group-item">04:00</a>
 -->
         </div>
-        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:hidden;right:10%">
+        <div class="list-group" id="timeSlot" style="float:right;width:25%;position: relative;visibility:visibility;right:10%">
             <a style="background-color: #990000; border-color: #990000;"class="list-group-item active">Morning</a>
             <a href="#imeSlot"  class="list-group-item">10:30</a>
             <a href="#imeSlot" class="list-group-item">11:30</a>
             <a style="background-color: #990000; border-color: #990000;" href="#" class="list-group-item active">Afternoon</a>
-            <a href="#imeSlot" class="list-group-item">02:00</a>
             <a href="#imeSlot" class="list-group-item">03:00</a>
             <a href="#imeSlot" class="list-group-item">03:30</a>
             <a href="#imeSlot" class="list-group-item">04:00</a>
-        <a style="background-color:#990000;float:right;margin-top:120px; vertical-align:baseline;visibility:hidden"  class="btn btn-info" id="submit" role="button" >Submit</a>
+        <a style="background-color:#990000;float:right;margin-top:150px; vertical-align:baseline;visibility:hidden"  class="btn btn-info" id="submit" role="button" >Submit</a>
         </div>
         
         
@@ -226,7 +227,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/simply-toast.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.calendario2.js"></script>
+    <script type="text/javascript" src="../js/jquery.calendario3.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript">	
 		$(function() {
@@ -309,7 +310,7 @@
                 $("#submit").click(function(){ 
                     $.simplyToast('A new appontment has been made successfully!', 'success');
                 setTimeout(function () {
-                    window.location.href = "view-editApp.html"; //will redirect to your blog page (an ex: blog.html)
+                    window.location.href = "view-editApp4.html"; //will redirect to your blog page (an ex: blog.html)
                     }, 2000); //will call the function after 2 secs.
 
                 });
