@@ -18,11 +18,15 @@
         margin-top:10px;
         padding:10px;
       }
-      .bottom{
+      /*.bottom{
         background: -webkit-gradient(linear, left bottom, left top, color-stop(0.2, rgb(68,68,68)), color-stop(0.97, rgb(115,115,115)), color-stop(1, rgb(95,95,95)));
         margin-top: 20px;
-      }
+      }*/
       .list-group a:hover{
+        background-color: #A43333 !important;
+        color: white;
+      }
+      .btn a:hover{
         background-color: #A43333 !important;
       }
 
@@ -158,36 +162,35 @@
       <div class="row">
 
         <div class="col-md-4">         
-            <h2>To-do List</h2>
+            <h2 style='background:rgba(153,0,0,.7);color:white;padding:5px'>To-do List</h2>
             <div class="list-group">
             
               <a class="list-group-item"><span class='fLink' style='padding:10px;'>2PM CSCI586</span></a>
               <a class="list-group-item"><span class='fLink' style='padding:10px'>3PM Meet Advisor Ryan</span></a>
               <a class="list-group-item"><span class='fLink' style='padding:10px'>5PM CSCI561</span></a>
               <a class="list-group-item"><span class='fLink' style='padding:10px'>7PM CSCI561 Homework</span></a>
-              <a class="list-group-item"><span class='fLink' style='padding:10px'>8.30PM Gym</span></a>
             
             </div>
 
             <a class="btn btn-default" href="calendar.html" role="button">View details &raquo;</a></p>
         </div>
 
-        <center><div class="col-md-4">
-          <h2>Campus Map</h2>
+        <div class="col-md-4">
+          <h2 style='background:rgba(153,0,0,.7);color:white;padding:5px'>Campus Map</h2>
           <!-- <form class="navbar-form navbar-left hidden-xs" role="search">
             
               <input type="text" class="form-control" placeholder="From">
               <input type="text" class="form-control" placeholder="To"><br><br> -->
-              <a href = 'map.html'><img src = '../img/map.png' style='height:200px;width:250px'/></a>
+              <center><a href = 'map.html'><img src = '../img/map.png' style='height:200px;width:250px'/></a></center>
             
           <!-- </form> -->
           <br><br>
           <!-- <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p> -->
           <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-        </div></center>
+        </div>
 
         <div class="col-md-4">
-          <h2>Friends' News</h2>
+          <h2 style='background:rgba(153,0,0,.7);color:white;padding:5px'>Friends' News</h2>
           <!-- <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
           <div class="list-group">
             <a href='#' class='list-group-item'><img class='img-circle' src='../img/stark.png' style='height:30px;width:30px' ><span class='fLink'>AAA just registered for CSCI570</span></a>
