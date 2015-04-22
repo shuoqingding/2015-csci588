@@ -214,7 +214,7 @@
         
     </div> <!-- /container -->
       
-    <footer id="vt_footer">
+    <footer id="vt_footer" >
       <div class="container">
         <small>&copy; USC 2015</small>
       </div>
@@ -297,7 +297,8 @@
                      $("#timeSlot").css({"visibility":"visible"});
                      $(this).off();
                 });
-                $(".advisorPic").click(function(){ 
+                $(".advisorPic").click(function(){
+                     $(this).css({"border-color":"#990000"});
                      $("#dateTime").css({"visibility":"visible"});
                      $(".custom-calendar-wrap.custom-calendar-full").css({"visibility":"visible"});
                 });

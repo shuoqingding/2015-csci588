@@ -6,7 +6,22 @@
         width: 560px !important;
         height: 400px !important;
         float: left !important;
-
+* {
+    margin: 0;
+}
+html, body {  
+    height: 100%;
+}
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* equal to footer height */
+    margin-bottom: -10px;         
+}
+.push{        
+    height: 10px;
+}
       }
 
     </style>
@@ -29,7 +44,7 @@
   </head>
 
   <body>
-
+<div id="wrapper">
      <header id="vt_header">
       <div class="container">
         <h1><a id="usc_logo" href="first.html">University of Southern California</a></h1>
@@ -156,7 +171,7 @@
             Department of Biomedical Engineering <br>
             Viterbi School of Engineering<br>
         </div>
-           
+            
     </div> 
         </div>
         <div style="width:100%;height:60px;magin-top:15px;">
@@ -165,8 +180,9 @@
             <p>**Canceling is not recommended, and is only allowed up to 24 hours before the scheduled appointment by clicking <button type="button" style="background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-trash" ></span></button>. Clicking <button type="button" style=" background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-pencil" ></span></button> above will cancel your appointment immediately and take you to the calendar to select a new date if it is available. If you would not like to make changes to your appointment time, simply click  <a style="background-color:#990000;vertical-align:bottom;" href="calendar_new.html" class="btn btn-info" role="button">Back</a> or close your browser window.**
         <br><br>
     </div> <!-- /container -->
-
-    <footer id="vt_footer">
+</div>
+       <div class="push"></div>
+    <footer id="vt_footer" >
       <div class="container">
         <small>&copy; USC 2015</small>
       </div>
@@ -182,5 +198,6 @@
                 });
            });
       </script>
+      
   </body>
 </html>
