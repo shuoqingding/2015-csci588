@@ -6,7 +6,22 @@
         width: 560px !important;
         height: 400px !important;
         float: left !important;
-
+* {
+    margin: 0;
+}
+html, body {  
+    height: 100%;
+}
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* equal to footer height */
+    margin-bottom: -10px;         
+}
+.push{        
+    height: 10px;
+}
       }
 
     </style>
@@ -29,7 +44,7 @@
   </head>
 
   <body>
-
+<div id="wrapper">
      <header id="vt_header">
       <div class="container">
         <h1><a id="usc_logo" href="first.html">University of Southern California</a></h1>
@@ -57,9 +72,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav">
             <li><a href="first.html">Home</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="news.html">News</a></li>
             <li><a href="dclearance.html">Courses</a></li>
-            <li><a href="#">Campus Map</a></li>
+            <li><a href="map.html">Campus Map</a></li>
             <li><a href="calendar.html">Personal Calendar</a></li>
             <li><a class="active" href="calendar_new.html">Advisement Appointment</a></li>
           </ul>
@@ -93,7 +108,7 @@
             </div>
         </div>
         <div class="panel-body">
-            Salvatori Computer Science Center(SAL) 104<br>
+            <a href="map.html?loc=sal">Salvatori Computer Science Center(SAL) 104</a><br>
             Department of Computer Science<br>
             Viterbi School of Engineering<br>
         </div>
@@ -123,7 +138,7 @@
             </div>
         </div>
         <div class="panel-body">
-            Bridge Hall 401<br>
+            <a href="map.html?loc=bh">Bridge Hall 401</a><br>
             Department of Data Sciences and Operations<br>
             Marshall School of Business<br>
         </div>
@@ -152,11 +167,11 @@
             </div>
         </div>
         <div class="panel-body">
-            Denney Research Center(DRB) 140<br>
+            <a href="map.html?loc=drb">Denney Research Center(DRB) 140</a><br>
             Department of Biomedical Engineering <br>
             Viterbi School of Engineering<br>
         </div>
-           
+            
     </div> 
         </div>
         <div style="width:100%;height:60px;magin-top:15px;">
@@ -165,10 +180,11 @@
             <p>**Canceling is not recommended, and is only allowed up to 24 hours before the scheduled appointment by clicking <button type="button" style="background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-trash" ></span></button>. Clicking <button type="button" style=" background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-pencil" ></span></button> above will cancel your appointment immediately and take you to the calendar to select a new date if it is available. If you would not like to make changes to your appointment time, simply click  <a style="background-color:#990000;vertical-align:bottom;" href="calendar_new.html" class="btn btn-info" role="button">Back</a> or close your browser window.**
         <br><br>
     </div> <!-- /container -->
-
-    <footer id="vt_footer">
+</div>
+       <div class="push"></div>
+    <footer id="vt_footer" >
       <div class="container">
-        <small>&copy; Company 2014</small>
+        <small>&copy; USC 2015</small>
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -182,5 +198,6 @@
                 });
            });
       </script>
+      
   </body>
 </html>
