@@ -18,6 +18,12 @@ function search( loc ){
   else if( loc == "OHE" ){
     setMarkers( [ [34.020718, -118.289480,loc] ] );
   }
+  else if( loc == "SLH" ){
+    setMarkers( [ [34.019627, -118.286912,loc] ] );
+  }
+  else if( loc == "EGG" ){
+    setMarkers( [ [34.029496, -118.279860,loc] ] )
+  }
   else{
     $.simplyToast( loc + ' not found!', 'danger');
   }
