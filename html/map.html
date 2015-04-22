@@ -71,7 +71,13 @@
                 <div id="search_form">
 
                   <div class="input-group">
-                    <input id="loc_search" type="text" class="form-control" placeholder="Search Building">
+                    <input id="loc_search" type="text" class="form-control" list="buildings" placeholder="Search Building">
+                    <datalist id="buildings">
+                      <option value="OHE">
+                      <option value="THH">
+                      <option value="SGM">
+                      <option value="SAL">
+                    </datalist>
                     <span class="input-group-btn">
                       <button id="button_search" class="btn btn-default" type="button">Search</button>
                     </span>
