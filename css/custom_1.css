@@ -262,20 +262,18 @@ margin-top:0 !important;
 
 .fc-calendar .fc-row > div > div a,
 .fc-calendar .fc-row > div > div span {
-	//color: rgba(255,255,255,0.7);
-	color: rgba(19, 2, 2, 1);
-	font-size: 12px;
-	text-transform: uppercase;
-	display: inline-block;
-	padding: 3px 5px;
-	border-radius: 3px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 100%;
-	margin-bottom: 1px;
-	//background: rgba(255,255,255,0.1);
-	background: rgba(223, 218, 229, 0.88);
+  color: rgba(19, 2, 2, 1);
+  font-size: 11px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-bottom: 1px;
+  background: rgba(223, 218, 229, 0.88);
 }
 
 .no-touch .fc-calendar .fc-row > div > div a:hover {
