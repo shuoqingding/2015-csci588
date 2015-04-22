@@ -76,7 +76,8 @@ body{
   font-size: 15px;
 }
 
-.navbar-red a:hover{
+.navbar-red a:hover,
+.navbar-red .active{
   background-color: #440303 !important;
 }
 
