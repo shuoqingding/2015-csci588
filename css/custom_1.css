@@ -132,11 +132,11 @@ margin-top:0 !important;
 }
 
 .custom-header nav span.custom-prev:before {
-	content: '\25c2';
+	content: '\276e';
 }
 
 .custom-header nav span.custom-next:before {
-	content: '\25b8';
+	content: '\276f';
 }
 
 .custom-header nav span:last-child {

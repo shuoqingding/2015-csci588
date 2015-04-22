@@ -187,9 +187,11 @@
                         html +='<div class=' + cellClasses + '">';
                     }else{
                         if(day>this.today.getDate()){
-                            
+                            if(day==25){
+                                html +='<div  class="selected-date">';
+                            }else{
                                 html +='<div  class="available-date">';
-                            
+                            }
                         }else{
                             html +='<div>';
                         }

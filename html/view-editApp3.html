@@ -79,7 +79,7 @@
             </div>
             <div style="float:right;width:60%;height:100%;position:ralative;text-align:right;">
                 
-                <button type="button" style=" position:absolute; top:0px; right:0px; background-color:#FFCC00;color:black">
+                <button type="button" id="edit" style=" position:absolute; top:0px; right:0px; background-color:#FFCC00;color:black">
                     <span class="glyphicon glyphicon-pencil" ></span>
                 </button>
                 <button type="button" style=" position:absolute; top:0px; right:35px;background-color:#FFCC00;color:black">
@@ -99,36 +99,9 @@
         </div>
            
     </div>
-    <div class="panel panel-default"style="width:49%;position:relative;float:right;height:240px;">
-        <div class="panel-heading" style="background-color:#990000;color:#FFF; height:150px;position:relative;">
-            <div style="float:left;width:35%">
-                <img src="../img/pp2.jpg" width="108px" height="108px" class="img-circle" alt="" ><br>
-                <h3 class="panel-title" >Ketty Smith</h3>
-            </div>
-            <div style="float:right;width:60%;height:100%;position:ralative;text-align:right;">
-                
-                <button type="button" style=" position:absolute; top:0px; right:0px; background-color:#FFCC00;color:black">
-                    <span class="glyphicon glyphicon-pencil" ></span>
-                </button>
-                <button type="button" id="cancel" style=" position:absolute; top:0px; right:35px;background-color:#FFCC00;color:black" >
-                    <span class="glyphicon glyphicon-trash" ></span>
-                </button>
-                <div style="float:right; width:100%;height:100%">
-                    <h3 class="panel-title" style="text-align:right;font-size:300%; position:absolute;bottom:35px;right:10px;">10:00am </h3>
-                    <h3 class="panel-title" style="text-align:right;font-size:200%; position:absolute;bottom:5px;right:10px;"> April, 25th, 2015  </h3>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="panel-body">
-            Electrical Engineering Building(EEB) 109<br>
-            Department of Electrical Engineering <br>
-            Viterbi School of Engineering<br>
-        </div>
-           
-    </div>    
+   
 
-    <div class="panel panel-default"style="width:49%;position:relative;float:left;height:240px;">
+    <div class="panel panel-default"style="width:49%;position:relative;float:right;height:240px;">
         <div class="panel-heading" style="background-color:#990000;color:#FFF; height:150px;position:relative;">
             <div style="float:left;width:35%">
                 <img src="../img/pp4.jpg" width="108px" height="108px" class="img-circle" alt="" ><br>
@@ -157,7 +130,7 @@
            
     </div>  
 
-        <div class="panel panel-default"style="width:49%;position:relative;float:right;height:240px;">
+        <div class="panel panel-default"style="width:49%;position:relative;float:left;height:240px;">
         <div class="panel-heading" style="background-color:#990000;color:#FFF; height:150px;position:relative;">
             <div style="float:left;width:35%">
                 <img src="../img/pp3.jpg" width="108px" height="108px" class="img-circle" alt="" ><br>
@@ -165,7 +138,7 @@
             </div>
             <div style="float:right;width:60%;height:100%;position:ralative;text-align:right;">
                 
-                <button type="button" style=" position:absolute; top:0px; right:0px; background-color:#FFCC00;color:black">
+                <button type="button"  style=" position:absolute; top:0px; right:0px; background-color:#FFCC00;color:black">
                     <span class="glyphicon glyphicon-pencil" ></span>
                 </button>
                 <button type="button" style=" position:absolute; top:0px; right:35px;background-color:#FFCC00;color:black">
@@ -186,7 +159,7 @@
            
     </div> 
         </div>
-        <div style="width:100%;height:60px;">
+        <div style="width:100%;height:60px;magin-top:15px;">
          <a style="background-color:#990000;float:right;" href="calendar_new.html" class="btn btn-info" role="button">Back</a>
         </div>
             <p>**Canceling is not recommended, and is only allowed up to 24 hours before the scheduled appointment by clicking <button type="button" style="background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-trash" ></span></button>. Clicking <button type="button" style=" background-color:#FFCC00;vertical-align:bottom;"><span class="glyphicon glyphicon-pencil" ></span></button> above will cancel your appointment immediately and take you to the calendar to select a new date if it is available. If you would not like to make changes to your appointment time, simply click  <a style="background-color:#990000;vertical-align:bottom;" href="calendar_new.html" class="btn btn-info" role="button">Back</a> or close your browser window.**
@@ -204,8 +177,8 @@
     <script src="../js/bootstrap.min.js"></script>
       <script>
       $(document).ready(function(){
-                $("#cancel").click(function(){
-                    window.location.href = "view-editApp2.html";
+                $("#edit").click(function(){
+                    window.location.href = "scheduleApp2.html";
                 });
            });
       </script>
