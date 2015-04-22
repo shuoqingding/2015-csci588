@@ -159,7 +159,7 @@
 				}
 
 				var calData = {};
-				calData[date] = '<a href="#">'+event_name+'</a>';
+				calData[date] = '<a href="#" title="'+event_name+'">'+event_name+'</a>';
 
 				cal.setData( calData );
 				$.simplyToast('A new event has been added successfully!', 'success');
@@ -167,6 +167,22 @@
 
 			} );
 			
+			var preloadCalData = { "04-01-2015": '<a title="CSCI 588 6:00PM-8:40PM" href="#">CSCI588 6:00PM-8:40PM</a>',
+									"04-08-2015": '<a title="CSCI 588 6:00PM-8:40PM" href="#">CSCI588 6:00PM-8:40PM</a>',
+									"04-15-2015": '<a title="CSCI 588 6:00PM-8:40PM" href="#">CSCI588 6:00PM-8:40PM</a>',
+									"04-22-2015": '<a title="CSCI 588 6:00PM-8:40PM" href="#">CSCI588 6:00PM-8:40PM</a>',
+									"04-29-2015": '<a title="CSCI 588 6:00PM-8:40PM" href="#">CSCI588 6:00PM-8:40PM</a>',
+									"04-02-2015": '<a title="CSCI 572 5:00PM-6:40PM" href="#">CSCI572 5:00PM-6:40PM</a>',
+									"04-09-2015": '<a title="CSCI 572 5:00PM-6:40PM" href="#">CSCI572 5:00PM-6:40PM</a>',
+									"04-16-2015": '<a title="CSCI 572 5:00PM-6:40PM" href="#">CSCI572 5:00PM-6:40PM</a>',
+									"04-23-2015": '<a title="CSCI 572 5:00PM-6:40PM" href="#">CSCI572 5:00PM-6:40PM</a>',
+									"04-30-2015": '<a title="CSCI 572 5:00PM-6:40PM" href="#">CSCI572 5:00PM-6:40PM</a>',
+									"04-06-2015": '<a title="CPT Workshop" href="#">CPT Workshop</a>',
+
+							 };
+			cal.setData( preloadCalData );
+
+
 		
 		});
 	</script>
